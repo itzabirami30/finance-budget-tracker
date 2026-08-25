@@ -1,0 +1,150 @@
+.budget-summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.budget-header h3 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+
+.toggle-form-btn {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.toggle-form-btn:hover {
+  background-color: #5568d3;
+}
+
+.budget-form {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.budget-form .form-group {
+  margin-bottom: 12px;
+}
+
+.budget-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #555;
+  font-size: 13px;
+}
+
+.budget-form input,
+.budget-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.budget-form .submit-btn {
+  width: 100%;
+  background-color: #667eea;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.budget-form .submit-btn:hover {
+  background-color: #5568d3;
+}
+
+.budgets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.no-data {
+  color: #999;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.budget-item {
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border-left: 4px solid #667eea;
+}
+
+.budget-item.status-over {
+  border-left-color: #f44336;
+  background: #ffebee;
+}
+
+.budget-item.status-warning {
+  border-left-color: #ff9800;
+  background: #fff3e0;
+}
+
+.budget-item.status-ok {
+  border-left-color: #4CAF50;
+  background: #f1f8f4;
+}
+
+.budget-item h4 {
+  margin: 0 0 6px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.budget-amounts {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.budget-bar {
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.budget-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.budget-item.status-over .budget-progress {
+  background: linear-gradient(90deg, #f44336, #d32f2f);
+}
+
+.budget-item.status-warning .budget-progress {
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+}
